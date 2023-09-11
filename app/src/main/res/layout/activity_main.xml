@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/primary_layout"
+
+        />
+    <TextView
+        android:id="@+id/textoNota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese nombre de la skin:" />
+
+    <EditText
+        android:id="@+id/editNota1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/textoNota2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtrar por arma" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Awp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ak-47"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M4"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Famas"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Galil"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deagle"/>
+
+
+    <Button
+        android:id="@+id/botonPromedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar Skin"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/steam"/>
+
+    <TextView
+        android:id="@+id/textoPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="El Precio de la skin es " />
+
+
+</LinearLayout>
